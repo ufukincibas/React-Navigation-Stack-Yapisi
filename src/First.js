@@ -1,11 +1,17 @@
 import React from "react";
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, Button } from "react-native";
 
-function First() {
+function First({ navigation }) {
+    function switchPage(){
+        navigation.navigate('Second',{username : "ufukincibas"})
+    }
+
     return (
         <View style={styles.container}>
             <Text style={styles.text}>First Page</Text>
+            <Button title="Go to Second" onPress={switchPage}/>
         </View>
+       
     );
 }
 

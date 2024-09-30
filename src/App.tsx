@@ -14,6 +14,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        
         <Stack.Screen name="First" component={First} />
         <Stack.Screen name="Second" component={Second} />
         
